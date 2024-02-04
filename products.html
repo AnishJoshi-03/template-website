@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramesh Dyeing - Orders</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="products.css">
-    <script href="products.js"></script>
-    
+
+    <script href="home.js"></script>
 </head>
 <body>
-  <div id="circularMenu" class="circular-menu">
+    <div class="container">
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html">Orders</a>
+            <a href="profile.html">Profile</a>
+        </div>
 
-    <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
-      <i class="fa fa-plus"></i>
-    </a>
-  
-    <menu class="items-wrapper">
-      <a href="#" class="menu-item fa fa-facebook"></a>
-      <a href="#" class="menu-item fa fa-twitter"></a>
-      <a href="#" class="menu-item fa fa-google-plus"></a>
-      <a href="#" class="menu-item fa fa-linkedin"></a>
-    </menu>
-  
-  </div>
-  
-  
-  <div id="circularMenu1" class="circular-menu circular-menu-left active">
-  
-    <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-      <i class="fa fa-bars"></i>
-    </a>
-  
-    <menu class="items-wrapper">
-      <a href="#" class="menu-item fa fa-home"></a>
-      <a href="#" class="menu-item fa fa-user"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-cog"></a>
-    </menu>
-  
-  </div>
+        <div class="content">
+            <div class="trending-items">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="assets/images/man.png" alt="Trending Item 1">
+                        <div class="text">Trending Item 1 Description</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="assets/images/11.jpeg" alt="Trending Item 2">
+                        <div class="text">Trending Item 2 Description</div>
+                    </div>
+
+                    <!-- Add more slides as needed -->
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2022 Your E-commerce Website</p>
+        </footer>
+    </div>
 </body>
 </html>
