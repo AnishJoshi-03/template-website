@@ -1,101 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XYZ Bags</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="home.css">
 
+    <script href="home.js"></script>
 </head>
 <body>
-    <header>
-        
-        <a href="home.html" class="logo">
-            <img src="rd.png" alt="XYZ Bags Logo">
-        </a>
-        <div class="logo-text">
-            <h1>RAMESH DYEING</h1>
+    <div class="container">
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html">Orders</a>
+            <a href="profile.html">Profile</a>
         </div>
-        
-    </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="orders.html">Orders</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="profile.html">Profile</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="home" class="home-section">
-            <h1>Welcome to XYZ Bags</h1>
-            <p>Your Trusted Partner for Stylish and Durable Bags</p>
-        </section>
-        <section id="products" class="content-section">
-            <h2>Our Products</h2>
-            <p>Discover a wide range of handbags and school bags crafted with precision and style. Whether you need a fashionable accessory or a reliable school bag, XYZ Bags has you covered.</p>
 
-        <div class="subsection" id="bags">
-            <h3 style="text-align: center;">Bags</h3>
-            <p style="text-align: center;">Explore our stylish collection of bags for every occasion. From trendy handbags to spacious backpacks, we have the perfect bag for you.</p>
-            <!-- Add images or further details as needed -->
-            <div class="photos">
-                <img src="1.jpg" alt="Bag 1">
-                <img src="1.jpeg" alt="Bag 2">
-                <img src="1.png" alt="Bag 3">
+        <div class="content">
+            <div class="trending-items">
+                <h2>Trending Items</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="assets/images/man.png" alt="Trending Item 1">
+                        <div class="text">Trending Item 1 Description</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="assets/images/11.jpeg" alt="Trending Item 2">
+                        <div class="text">Trending Item 2 Description</div>
+                    </div>
+
+                    <!-- Add more slides as needed -->
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
+
         </div>
 
-        <div class="subsection" id="raincoats">
-            <h3 style="text-align: center;">Raincoats</h3>
-            <p style="text-align: center;">Stay dry and stylish with our range of high-quality raincoats. Designed to withstand the rain while keeping you fashionable.</p>
-            <!-- Add images or further details as needed -->
-            <div class="photos">
-                <img src="3.jpeg" alt="Raincoat 1">
-                <img src="4.jpeg" alt="Raincoat 2">
-                <img src="7.jpeg" alt="Raincoat 3">
-            </div>
-        </div>
-
-        <div class="subsection" id="sweaters">
-            <h3 style="text-align: center;">Sweaters</h3>
-            <p style="text-align: center;">Get cozy with our collection of warm and comfortable sweaters. Perfect for chilly days, our sweaters combine style and comfort.</p>
-            <!-- Add images or further details as needed -->
-            <div class="photos">
-                <img src="10.png" alt="Sweater 1">
-                <img src="11.jpeg" alt="Sweater 2">
-                <img src="8.jpeg" alt="Sweater 3">
-            </div>
-        </div>
-
-        <section id="profile" class="content-section">
-            <h2>About XYZ Bags</h2>
-    </main>
-    <script>
-        // JavaScript for Image Slider
-        const slides = document.querySelector('.slides');
-        const slideItems = document.querySelectorAll('.slide');
-        let currentIndex = 0;
-
-        function updateSlider() {
-            slides.style.transform = `translateX(${-currentIndex * 100}%)`;
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slideItems.length;
-            updateSlider();
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + slideItems.length) % slideItems.length;
-            updateSlider();
-        }
-
-        setInterval(nextSlide, 3000); // Automatically slide every 3 seconds
-    </script>
-</body>
-</html>
+        <footer>
+            <p>&copy; 2022 Your E-commerce Website</p>
+        </footer>
+    </div>
 </body>
 </html>
